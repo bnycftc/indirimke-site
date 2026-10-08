@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shorts Creator Pro</title>
+<meta name="description" content="An autonomous short-form video studio: from topic research to published YouTube Shorts and Instagram Reels, powered by Claude.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9f6; --surface: #ffffff; --text: #1a1a1a; --muted: #5c5c5c;
+    --accent: #e8572a; --border: #e6e2da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --surface: #1c1c1c; --text: #f2f2f2; --muted: #a8a8a8;
+      --accent: #ff7a4d; --border: #2c2c2c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --surface: #1c1c1c; --text: #f2f2f2; --muted: #a8a8a8;
+    --accent: #ff7a4d; --border: #2c2c2c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; line-height: 1.6; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 800; font-size: 1.1rem; }
+  .logo span { color: var(--accent); }
+  header a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+  .hero { padding: 72px 0 56px; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; font-weight: 800; max-width: 760px; }
+  .hero p { margin-top: 20px; font-size: 1.15rem; color: var(--muted); max-width: 640px; }
+  h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 24px; }
+  section { padding: 48px 0; border-top: 1px solid var(--border); }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .card b { display: block; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: .95rem; }
+  .num { color: var(--accent); font-weight: 800; font-size: .85rem; letter-spacing: .05em; }
+  ul.plain { list-style: none; padding: 0; display: grid; gap: 12px; }
+  ul.plain li { padding-left: 20px; position: relative; color: var(--muted); }
+  ul.plain li::before { content: ""; position: absolute; left: 0; top: .65em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  ul.plain li b { color: var(--text); }
+  footer { padding: 40px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Shorts Creator <span>Pro</span> <small style="font-weight:400;color:var(--muted)">by Indirimke</small></div>
+    <a href="#contact">Contact</a>
+  </header>
+
+  <div class="hero">
+    <h1>An autonomous studio for short-form video.</h1>
+    <p>Shorts Creator Pro takes a video from idea to published Short in one click: topic discovery, research, script, visuals, voice, render, quality checks and scheduling — with Claude doing the thinking at every step.</p>
+  </div>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="card"><div class="num">01</div><b>Topic discovery</b><p>Finds evergreen and trending topics per channel niche and filters out anything already covered.</p></div>
+      <div class="card"><div class="num">02</div><b>Research &amp; script</b><p>Gathers sources, checks facts and writes a tight script with a hook, structure and closing question.</p></div>
+      <div class="card"><div class="num">03</div><b>Visuals &amp; voice</b><p>Plans scenes, pulls licensed stock or generated footage, records narration and animates a talking mascot presenter with lip-sync.</p></div>
+      <div class="card"><div class="num">04</div><b>Render &amp; QA</b><p>Renders vertical video, then runs automated quality, caption and originality gates. Anything that fails goes to human review.</p></div>
+      <div class="card"><div class="num">05</div><b>Publish</b><p>Schedules approved videos to YouTube Shorts and Instagram Reels with titles, descriptions and a first comment.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Today</h2>
+    <ul class="plain">
+      <li><b>Two languages.</b> Running English and Turkish channels from the same pipeline.</li>
+      <li><b>Built on Claude.</b> Topic selection, fact checking, scriptwriting and QA judgments are made with Claude.</li>
+      <li><b>Quality first.</b> Strict gates for originality, factual accuracy and duplicate prevention before anything goes live.</li>
+      <li><b>Bootstrapped.</b> Shorts Creator Pro is built and operated independently by Indirimke, a solo-founder company.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="color:var(--muted)">Questions or partnership ideas: <a href="mailto:info@indirimke.com" style="color:var(--accent)">info@indirimke.com</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Indirimke · Shorts Creator Pro</span>
+    <span>Made with Claude</span>
+  </footer>
+</div>
+</body>
+</html>
